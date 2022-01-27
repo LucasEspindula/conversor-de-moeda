@@ -58,7 +58,7 @@ export default {
   methods: {
     getMoeda: async function () {
       const result = await fetch(
-        "http://economia.awesomeapi.com.br/json/last/" + this.moedaSelecionada
+        "https://economia.awesomeapi.com.br/json/last/" + this.moedaSelecionada
       )
         .then((res) => res.json())
         .then((res) => res)
